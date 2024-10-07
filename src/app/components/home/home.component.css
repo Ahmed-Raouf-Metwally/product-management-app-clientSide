@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+.bg-img {
+    background-image: url("../../../../public/BG.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #222831;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.186);
+    backdrop-filter: blur(5px);
+
+}
+@media screen
+    and (max-width: 1000px) and (min-width: 100px) {
+
+    .bg-img {
+        background-image: url("../../../../public/BG.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #222831;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.186);
+        backdrop-filter: blur(5px);
+    }
+
+    
+
+}

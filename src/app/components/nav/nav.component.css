@@ -1,0 +1,217 @@
+nav {
+    background-color: #222831 !important;
+    color: #EEEEEE !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    transition: all 0.3s ease-in-out !important;
+    z-index: 99;
+}
+
+.navbar-brand {
+    color: #00ADB5 !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    margin: 10px;
+
+}
+
+.nav-link {
+    color: #EEEEEE !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    text-decoration: none !important;
+    margin: 0 !important;
+    padding: 10 !important;
+    text-align: center !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.nav-link:hover {
+    color: #00ADB5 !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    text-decoration: none !important;
+    margin: 0 !important;
+    padding: 10 !important;
+    text-align: center !important;
+    transition: all 0.3s ease-in-out !important;
+
+}
+
+.active {
+    color: #00ADB5 !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    text-decoration: none !important;
+    margin: 0 !important;
+    padding: 10 !important;
+    text-align: center !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.active:hover {
+    color: #ffffff !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    text-decoration: none !important;
+    margin: 0 !important;
+    padding: 10 !important;
+    text-align: center !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 100px) {
+    nav {
+        background-color: #222831 !important;
+        color: #EEEEEE !important;
+        font-weight: bold !important;
+        font-size: 20px !important;
+        padding: 10px !important;
+        border-radius: 5px !important;
+        text-align: center !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        gap: 10px !important;
+        text-decoration: none !important;
+        text-align: center !important;
+        transition: all 0.3s ease-in-out !important;
+        z-index: 99;
+
+    }
+
+    .navbar-brand {
+        color: #00ADB5 !important;
+        font-weight: bold !important;
+        font-size: 20px !important;
+        text-align: center !important;
+        width: 20% !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        margin: 10px;
+    }
+
+    .nav-link {
+        color: #EEEEEE !important;
+        font-weight: bold !important;
+        font-size: 20px !important;
+        text-align: center !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        text-decoration: none !important;
+        margin: 0 !important;
+        padding: 10 !important;
+        text-align: center !important;
+        transition: all 0.3s ease-in-out !important;
+
+    }
+
+    .nav-link:hover {
+        color: #00ADB5 !important;
+        font-weight: bold !important;
+        font-size: 20px !important;
+        text-align: center !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        text-decoration: none !important;
+        margin: 0 !important;
+        padding: 10 !important;
+        text-align: center !important;
+        transition: all 0.3s ease-in-out !important;
+
+    }
+
+    .navbar-toggler {
+        background-color: #00ADB5 !important;
+        color: #EEEEEE !important;
+        font-weight: bold !important;
+        font-size: 20px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        text-decoration: none !important;
+        margin: 0 !important;
+        padding: 10 !important;
+        text-align: center !important;
+        transition: all 0.3s ease-in-out !important;
+    }
+
+    .navbar-toggler:hover {
+        background-color: #393E46 !important;
+        color: #00ADB5 !important;
+        font-weight: bold !important;
+        font-size: 20px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        text-decoration: none !important;
+        margin: 0 !important;
+        padding: 10 !important;
+        text-align: center !important;
+        transition: all 0.3s ease-in-out !important;
+    }
+
+    .active {
+        color: #00ADB5 !important;
+        font-weight: bold !important;
+        font-size: 20px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        text-decoration: none !important;
+        margin: 0 !important;
+        padding: 10 !important;
+    }
+
+
+}
