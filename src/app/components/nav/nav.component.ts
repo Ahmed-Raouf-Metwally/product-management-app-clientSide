@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { LocalStorageService } from '../../local-storage.service';
+import { CookieService } from 'ngx-cookie-service';
+
 
 @Component({
   selector: 'app-nav',
@@ -9,6 +12,17 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-  logedin:boolean = false
+  constructor(private localStorageService: LocalStorageService) { }
+  
+  getUserData() {
+    return this.localStorageService.getItem('currentUser')
+  }
+  cookieService = inject(CookieService);
 
+  logOut() {
+    this.localStorageService.removeItem('currentUser')
+    this.cookieService.delete('jwt', '/', 'localhost', true);
+    alert("loged out succefuly")
+    window.location.href = '/login'
+  }
 }

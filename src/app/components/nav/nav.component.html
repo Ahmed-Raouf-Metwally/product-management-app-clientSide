@@ -9,7 +9,7 @@
             <ul class="navbar-nav">
                
             
-                @if (logedin == true) {
+                @if (getUserData() != null) {
                     <li class="nav-item">
                         <a routerLink="home" routerLinkActive="active" class="nav-link">Home</a>
                     </li>
@@ -19,18 +19,22 @@
                     <li class="nav-item">
                         <a routerLink="dashboard" routerLinkActive="active" class="nav-link">Dashboard</a>
                     </li>
+                    <li class="nav-item">
+                        <a (click)="logOut()" routerLinkActive="active" class="nav-link" style="color: red;">Logout</a>
+                    </li>
                 }
                 @else {
                     <li class="nav-item">
-                        <a routerLink="home" routerLinkActive="active" class="nav-link">Home</a>
+                        <a routerLink="/home" routerLinkActive="active" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a routerLink="products" routerLinkActive="active" class="nav-link">products</a>
+                        <a routerLink="/products" routerLinkActive="active" class="nav-link">products</a>
                     </li>
                     <li class="nav-item">
-                        <a routerLink="login" routerLinkActive="active" class="nav-link">Login</a>
+                        <a routerLink="/login" routerLinkActive="active" class="nav-link">Login</a>
                     </li>
                 }
+                
 
 
             </ul>

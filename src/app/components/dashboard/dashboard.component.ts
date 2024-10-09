@@ -1,12 +1,35 @@
-import { Component } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
+import { Component, inject, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
-export class DashboardComponent {
+export class DashboardComponent implements OnInit {
+  httpClient = inject(HttpClient)
+  productsArray: any[] = []
+
+  fetchData() {
+    this.httpClient.get('http://localhost:5000/api/v1/products')
+      .subscribe((res: any) => {
+        this.productsArray = res.data.products
+      })
+  }
+
+  ngOnInit(): void {
+    this.fetchData()
+  }
+
+  deleteProduct(id: string) {
+    this.httpClient.delete(`http://localhost:5000/api/v1/products/${id}`, {
+      withCredentials: true
+    })
+      .subscribe((res) => {
+        this.fetchData()
+      })
+  }
 
 }

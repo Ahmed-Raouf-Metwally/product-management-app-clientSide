@@ -6,11 +6,12 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { RegisterComponent } from './components/register/register.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { AddproductComponent } from './components/addproduct/addproduct.component';
+import { UpdateProductComponent } from './components/update-product/update-product.component';
 
 
 
 export const routes: Routes = [
-
     {
         path: '',
         redirectTo: '/home',
@@ -40,11 +41,17 @@ export const routes: Routes = [
         path: 'dashboard',
         component: DashboardComponent
     },
-
+    {
+        path: 'dashboard/update/:productID',
+        component: UpdateProductComponent
+    },
+    {
+        path: 'dashboard/add',
+        component: AddproductComponent
+    },
     // otherwise redirect to home
     {
         path: '**',
         component: NotfoundComponent
     }
-
 ];

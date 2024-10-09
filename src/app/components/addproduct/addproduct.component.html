@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">Add Product</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <form (submit)="addProduct($event)">
+                <div class="form-group">
+                    <label for="productName">Product Name</label>
+                    <input type="text" class="form-control" id="productName" name="productName">
+                </div>
+                <div class="form-group">
+                    <label for="productName">Product Category</label>
+                    <input type="text" class="form-control" id="productName" name="productCategory">
+                </div>
+                <div class="form-group">
+                    <label for="productName">Product Quantity</label>
+                    <input type="number" class="form-control" id="productName" name="productQuantity">
+                </div>
+                <div class="form-group">
+                    <label for="productName">Product Rate</label>
+                    <input type="text" class="form-control" id="productName" name="productRate">
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">Product Price</label>
+                    <input type="text" class="form-control" id="productPrice" name="productPrice">
+                </div>
+                <div class="form-group">
+                    <label for="productImg">Product Supplier</label>
+                    <input type="text" class="form-control" id="productImg" name="productSupplier">
+                </div>
+                <div class="form-group">
+                    <label for="productAvailable">Product Available</label>
+                    <select class="form-select" aria-label="Default select example" name="productAvailable">
+                        <option selected>Open this select menu</option>
+                        <option value=true style="color: green;">In Stock</option>
+                        <option value=false style="color: red;">Out Of Stock</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="productDesc">Product Description</label>
+                    <textarea class="form-control" id="productDesc" name="productDesc"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-info">add product</button>
+                </div>
+            </form>
+            <div style="height: 100px;"></div>
+        </div>
+    </div>
+</div>

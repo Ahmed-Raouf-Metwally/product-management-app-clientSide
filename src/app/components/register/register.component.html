@@ -1,1 +1,43 @@
-<p>register works!</p>
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Register</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form (submit)="register($event)">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" class="form-control" id="username" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label >E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label >Password</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <label >Address</label>
+                        <input type="Address" class="form-control" id="address" name="address">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="phone" class="form-control" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-info">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+                <div style="height: 100px;"></div>
+
+</div>

@@ -1,1 +1,41 @@
-<p>product-details works! >>> {{productID()}}</p>
+<div class="container" style="margin-bottom: 100px;">
+    <div class="row">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Product Details</h2>
+            </div>
+            <img [src]=productDetails[0].productImg class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="card-title">{{productDetails[0].productName}}</h3>
+                <h5>Description:</h5>
+                <p class="card-text">{{productDetails[0].productDescription}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <h5>Category : </h5> {{productDetails[0].productCategory}}
+                </li>
+                <li class="list-group-item">
+                    <h5>Quantity : </h5> {{productDetails[0].productQuantity}}
+                </li>
+                <li class="list-group-item">
+                    <h5>Rate : </h5> {{productDetails[0].productRating}}
+                </li>
+                <li class="list-group-item">
+                    <h5>Supplier : </h5> {{productDetails[0].productSupplier}}
+                </li>
+                <li class="list-group-item">
+                    <h5>Price : </h5> {{productDetails[0].productPrice}} $
+                </li>
+            </ul>
+            <div class="card-body">
+                @if(productDetails[0].productAvailable){
+                <h6 style="color:green">Available in Stock</h6>
+                }
+                @else {
+                <h6 style="color:red">Out Of Stock</h6>
+
+                }
+            </div>
+        </div>
+    </div>
+</div>

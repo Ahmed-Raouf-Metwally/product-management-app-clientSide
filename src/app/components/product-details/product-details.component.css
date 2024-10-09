@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+.card{
+    color: #00ADB5 !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    background-color: #EEEEEE;
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+
+.card-title{
+    color: #00ADB5 !important;
+    font-weight: bold !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.card-body{
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    transition: all 0.3s ease-in-out !important;
+    background-color: #222831 !important;
+    color: #EEEEEE !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.card-text{
+    color: #00ADB5 !important;
+    font-weight: bold !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+ul{
+    color: #00ADB5 !important;
+    font-weight: bold !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    transition: all 0.3s ease-in-out !important;
+    list-style: none;
+}
+
+li{
+    color: #00ADB5 !important;
+    font-weight: bold !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+
+
+
+

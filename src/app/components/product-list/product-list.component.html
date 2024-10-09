@@ -1,1 +1,31 @@
-<p>product-list works!</p>
+<div class="container" style="margin-bottom: 100px;">
+    <h1>Products</h1>
+    <div class="row">
+        @for(product of productsArray ; track $index){
+        <div class="card" style="width: 18rem; margin: 15px;">
+            <img [src]=product.productImg class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{product.productName}}</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <h6>Price : </h6> {{product.productPrice}} $
+                </li>
+            </ul>
+            <div class="card-body">
+                @if(product.productAvailable){
+                <h6 style="color:green">Available in Stock</h6>
+                }
+                @else {
+                <h6 style="color:red" >Out Of Stock</h6>
+        
+                }
+            </div>
+                <div class="card-body">
+                    <a routerLink="/product/{{product._id}}" class="card-link">Show More</a>
+                </div>
+        
+        </div>
+        }
+    </div>
+</div>

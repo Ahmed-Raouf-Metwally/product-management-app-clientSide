@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .form-group {
     margin-bottom: 10px;
     display: flex;
@@ -25,17 +29,37 @@ button {
     padding: 10px !important;
     border-radius: 5px !important;
     text-align: center !important;
-    width: 100% !important;
+    width: 15% !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     flex-direction: column !important;
+    gap: 10px !important;
     text-decoration: none !important;
     text-align: center !important;
+    transition: all 0.3s ease-in-out !important;
+    cursor: pointer !important;
+    font-size: medium;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    color: #00ADB5;
     font-weight: bold;
     font-size: 20px;
     padding: 10px;
     border-radius: 5px;
+    background-color: #EEEEEE;
 }
 
 input {
@@ -49,13 +73,29 @@ input {
     justify-content: center !important;
     align-items: center !important;
     flex-direction: column !important;
+    gap: 10px !important;
     text-decoration: none !important;
     text-align: center !important;
     transition: all 0.3s ease-in-out !important;
-    color: #00ADB5;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 5px;
+    cursor: pointer !important;
+    font-size: medium;
 }
 
+select {
+    font-weight: bold !important;
+    font-size: 20px !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+}
+
+h1{
+    color: #00ADB5;
+    font-weight: bold;
+}
