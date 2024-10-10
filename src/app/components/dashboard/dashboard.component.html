@@ -5,25 +5,28 @@
         </div>
     </div>
     <div class="row">
+        <div class="col-12 addCol">
+            <a routerLink="add" class="btn btn-primary">Add Product</a>
+        </div>
     </div>
     <div class="row">
         @for(product of productsArray ; track $index){
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                <h5 class="card-title">{{product.productName}}</h5>
-                        <p class="card-text">{{product._id}}</p>
-                        <div class="btn-group" role="group" aria-label="Basic example">
-                            <a routerLink="add" class="btn btn-primary">Add</a>
-                            <a routerLink="update/{{product._id}}" class="btn btn-warning">Update</a>
-                            <a (click)="deleteProduct(product._id)" class="btn btn-danger">DELETE</a>
-                        </div>
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <img src="http://localhost:5000/{{product.productImg}}" class="card-img-top" alt={{product.productName}}>
+                    <h5 class="card-title">{{product.productName}}</h5>
+                    <p class="card-text">{{product._id}}</p>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <a routerLink="update/{{product._id}}" class="btn btn-warning">Update</a>
+                        <a (click)="deleteProduct(product._id)" class="btn btn-danger">DELETE</a>
                     </div>
                 </div>
             </div>
-                <div style="height: 25px;">
-                </div>
+        </div>
+        <div style="height: 25px;">
+        </div>
         }
-        
+
     </div>
 </div>

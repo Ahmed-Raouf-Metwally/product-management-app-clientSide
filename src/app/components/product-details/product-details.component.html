@@ -4,7 +4,7 @@
             <div class="card-body">
                 <h2 class="card-title">Product Details</h2>
             </div>
-            <img [src]=productDetails[0].productImg class="card-img-top" alt="...">
+            <img [src]=productDetails[0].productImg class="card-img-top" alt={{productDetails[0].productName}}>
             <div class="card-body">
                 <h3 class="card-title">{{productDetails[0].productName}}</h3>
                 <h5>Description:</h5>
@@ -37,5 +37,8 @@
                 }
             </div>
         </div>
+    </div>
+    <div>
+        <button routerLink="/products" class="btn btn-info">Back</button>
     </div>
 </div>

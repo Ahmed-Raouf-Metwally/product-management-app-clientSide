@@ -1,9 +1,9 @@
-*{
+* {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-.card{
+.card {
     color: #00ADB5 !important;
     font-weight: bold !important;
     font-size: 20px !important;
@@ -21,7 +21,7 @@
     transition: all 0.3s ease-in-out !important;
 }
 
-.card-title{
+.card-title {
     color: #00ADB5 !important;
     font-weight: bold !important;
     font-size: 30px !important;
@@ -38,3 +38,34 @@
     cursor: pointer !important;
 }
 
+.addCol {
+    color: #00ADB5 !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    background-color: #EEEEEE;
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    transition: all 0.3s ease-in-out !important;
+    cursor: pointer !important;
+    border: #00ADB5 !important;
+    cursor: pointer !important;
+}
+
+img{
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer !important;
+    border: #00ADB5 !important;
+    
+}

@@ -3,7 +3,7 @@
     <div class="row">
         @for(product of productsArray ; track $index){
         <div class="card" style="width: 18rem; margin: 15px;">
-            <img [src]=product.productImg class="card-img-top" alt="...">
+            <img src="http://localhost:5000/{{product.productImg}}" class="card-img-top" alt={{product.productName}} >
             <div class="card-body">
                 <h5 class="card-title">{{product.productName}}</h5>
             </div>

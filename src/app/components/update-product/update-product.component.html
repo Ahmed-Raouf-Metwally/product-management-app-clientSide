@@ -1,1 +1,65 @@
-<p>update-product works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">Update Product</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <form (submit)="updateProduct($event)">
+                <div class="form-group">
+                    <label>Product Name</label>
+                    <input type="text" class="form-control" id="productName" name="productName"
+                        [value]=productDetails[0].productName>
+                </div>
+                <div class="form-group">
+                    <label>Product Category</label>
+                    <input type="text" class="form-control" id="productCategory" name="productCategory"
+                        [value]=productDetails[0].productCategory>
+                </div>
+                <div class="form-group">
+                    <label>Product Quantity</label>
+                    <input type="number" class="form-control" id="productQuantity" name="productQuantity"
+                        [value]=productDetails[0].productQuantity>
+                </div>
+                <div class="form-group">
+                    <label>Product Rate</label>
+                    <input type="text" class="form-control" id="productRating" name="productRating"
+                        [value]=productDetails[0].productRating>
+                </div>
+                <div class="form-group">
+                    <label>Product Price</label>
+                    <input type="text" class="form-control" id="productPrice" name="productPrice"
+                        [value]=productDetails[0].productPrice>
+                </div>
+                <div class="form-group">
+                    <label> Product Supplier</label>
+                    <input type="text" class="form-control" id="productSupplier" name="productSupplier"
+                        [value]=productDetails[0].productSupplier>
+                </div>
+                <div class="form-group">
+                    <label>Product Available</label>
+                    <select class="form-select" aria-label="Default select example" name="productAvailable"
+                        [value]=productDetails[0].productAvailable>
+                        <option selected>Open this select menu</option>
+                        <option value=true style="color: green;">In Stock</option>
+                        <option value=false style="color: red;">Out Of Stock</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Product Description</label>
+                    <textarea class="form-control" id="productDescription" name="productDescription"
+                        [value]=productDetails[0].productDescription></textarea>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="productImg">Product Picture</label>
+                    <input type="file" class="form-control" id="productImg" name="productImg">
+                </div> -->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-info">Update product</button>
+                </div>
+            </form>
+            <div style="height: 100px;"></div>
+        </div>
+    </div>
+</div>
