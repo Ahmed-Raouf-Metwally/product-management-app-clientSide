@@ -6,6 +6,19 @@
             "config": {
                 "buildCommand": "ng build --configuration production"
             }
+        },
+        {
+            "src": "package.json",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "dist/product-management-app-clientSide"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
         }
     ]
 }
