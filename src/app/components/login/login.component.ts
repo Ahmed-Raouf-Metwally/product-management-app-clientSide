@@ -19,7 +19,7 @@ export class LoginComponent {
     e.preventDefault();
     this.data = new FormData(e.target)
 
-    this.httpClient.post('http://localhost:5000/api/v1/users/login',
+    this.httpClient.post('https://productmanagement-api-production.up.railway.app/api/v1/users/login',
       {
         "email": this.data.get('email'),
         "password": this.data.get('password')

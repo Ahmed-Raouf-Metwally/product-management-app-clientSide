@@ -16,7 +16,7 @@ export class RegisterComponent {
     e.preventDefault();
     this.data = new FormData(e.target)
 
-    this.httpClient.post('http://localhost:5000/api/v1/users/register',
+    this.httpClient.post('https://productmanagement-api-production.up.railway.app/api/v1/users/register',
       {
         "name": this.data.get('username'),
         "email": this.data.get('email'),
@@ -28,7 +28,7 @@ export class RegisterComponent {
       .subscribe((res: any) => {
         if (res.status == 200) {
           alert("Welcome")
-          this.httpClient.post('http://localhost:5000/api/v1/users/login',
+          this.httpClient.post('https://productmanagement-api-production.up.railway.app/api/v1/users/login',
             {
               "email": this.data.get('email'),
               "password": this.data.get('password')

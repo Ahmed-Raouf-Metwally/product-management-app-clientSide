@@ -16,7 +16,7 @@ export class AddproductComponent {
   addProduct(e: any) {
     e.preventDefault();
     this.data = new FormData(e.target)    
-    this.httpClient.post('http://localhost:5000/api/v1/products',this.data,{withCredentials: true})
+    this.httpClient.post('https://productmanagement-api-production.up.railway.app/api/v1/products',this.data,{withCredentials: true})
       .subscribe((res: any) => {
         if (res.status == "success") {
           console.log(this.data.get('productImg'));

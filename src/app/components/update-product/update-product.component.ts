@@ -22,7 +22,7 @@ export class UpdateProductComponent implements OnInit{
     console.log(e.target);
     
     this.data = new FormData(e.target)
-    this.httpClient.patch(`http://localhost:5000/api/v1/products/${this.productID()}`, this.data, { withCredentials: true })
+    this.httpClient.patch(`https://productmanagement-api-production.up.railway.app/api/v1/products/${this.productID()}`, this.data, { withCredentials: true })
       .subscribe((res: any) => {
         console.log(res);
         if (res.status == "success") {
@@ -35,7 +35,7 @@ export class UpdateProductComponent implements OnInit{
   getProductDetails() {
     this
       .httpClient
-      .get(`http://localhost:5000/api/v1/products/${this.productID()}`)
+      .get(`https://productmanagement-api-production.up.railway.app/api/v1/products/${this.productID()}`)
       .subscribe(res => {
         this.productDetails = res
       }) 

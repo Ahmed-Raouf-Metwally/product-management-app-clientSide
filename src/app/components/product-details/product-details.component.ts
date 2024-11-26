@@ -17,7 +17,7 @@ export class ProductDetailsComponent implements OnInit {
   fetchData() {
     this
       .httpClient
-      .get(`http://localhost:5000/api/v1/products/${this.productID()}`)
+      .get(`https://productmanagement-api-production.up.railway.app/api/v1/products/${this.productID()}`)
       .subscribe(res=>this.productDetails=res)
   }
 

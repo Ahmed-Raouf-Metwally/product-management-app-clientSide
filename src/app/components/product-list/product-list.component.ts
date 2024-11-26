@@ -15,7 +15,7 @@ export class ProductListComponent implements OnInit{
   productsArray:any[] = []
 
   fetchData() {
-    this.httpClient.get('http://127.0.0.1:5000/api/v1/products')
+    this.httpClient.get('https://productmanagement-api-production.up.railway.app/api/v1/products')
       .subscribe((res: any) => {
         this.productsArray = res.data.products
       })

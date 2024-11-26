@@ -13,7 +13,7 @@ export class DashboardComponent implements OnInit {
   productsArray: any[] = []
 
   fetchData() {
-    this.httpClient.get('http://localhost:5000/api/v1/products')
+    this.httpClient.get('https://productmanagement-api-production.up.railway.app/api/v1/products')
       .subscribe((res: any) => {
         this.productsArray = res.data.products
       })
@@ -24,7 +24,7 @@ export class DashboardComponent implements OnInit {
   }
 
   deleteProduct(id: string) {
-    this.httpClient.delete(`http://localhost:5000/api/v1/products/${id}`, {
+    this.httpClient.delete(`https://productmanagement-api-production.up.railway.app/api/v1/products/${id}`, {
       withCredentials: true
     })
       .subscribe((res) => {
